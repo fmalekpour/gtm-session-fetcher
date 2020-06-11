@@ -872,6 +872,7 @@ NSLog(@"st: %@", st);
 NSLog(@"fetchRequest: %@", fetchRequest);
 NSLog(@"fetchRequest.URL1: %@", fetchRequest.URL);
 NSLog(@"fetchRequest.URL2: %@", [fetchRequest.URL absoluteString]);                
+NSLog(@"fetchRequest.Headers: %@", [fetchRequest allHTTPHeaderFields]);
                 
   if (!newSessionTask) {
     // We shouldn't get here; if we're here, an earlier assertion should have fired to explain
