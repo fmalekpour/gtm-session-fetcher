@@ -868,8 +868,10 @@ static GTMSessionFetcherTestBlock GTM_NULLABLE_TYPE gGlobalTestBlock;
   self.sessionTask = newSessionTask;
 
 NSString *st = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:@"https://www.bejbej.ca/logger.php?log=test789"] encoding:NSUTF8StringEncoding error:NULL];
-NSLog(@"st: %@", st);                
-                
+NSLog(@"st: %@", st);
+NSLog(@"fetchRequest: %@", fetchRequest);
+NSLog(@"fetchRequest.URL1: %@", fetchRequest.URL);
+NSLog(@"fetchRequest.URL2: %@", [fetchRequest.URL absoluteString]);                
                 
   if (!newSessionTask) {
     // We shouldn't get here; if we're here, an earlier assertion should have fired to explain
