@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
   s.version     = '1.4.0-fm1'
   s.authors     = 'Google Inc.'
   s.license     = { :type => 'Apache', :file => 'LICENSE' }
-  s.homepage    = 'https://github.com/google/gtm-session-fetcher'
-  s.source      = { :git => 'https://github.com/google/gtm-session-fetcher.git',
+  s.homepage    = 'https://github.com/fmalekpour/gtm-session-fetcher'
+  s.source      = { :git => 'https://github.com/fmalekpour/gtm-session-fetcher.git',
                     :tag => "v#{s.version}" }
   s.summary     = 'Google Toolbox for Mac - Session Fetcher'
   s.description = <<-DESC
